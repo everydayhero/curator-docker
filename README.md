@@ -6,6 +6,10 @@ The list of tasks currently are:
 
 ## Configuration
 
-`ELASTICSEARCH_HOST` - The hostname or IP address of an elasticsearch cluster.
+`ELASTICSEARCH_HOST` - The hostname or IP address of an elasticsearch cluster. (Required)
 
-`MAX_INDEX_AGE` - The maximum age (in days) a logstash index can be until it is deleted.
+`MAX_INDEX_AGE` - The maximum age (in days) a logstash index can be until it is deleted. (Required)
+
+`ELASTICSEARCH_PORT` - Specify the instance port. If not set default is 9200.
+
+`USE_SSL` - set to true and specify the correct port with `ELASTICSEARCH_PORT`

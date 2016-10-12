@@ -7,4 +7,5 @@ if [ -z "$ELASTICSEARCH_HOST" ]; then
   exit 1
 fi
 
+echo "contatiner started"
 exec "$@"

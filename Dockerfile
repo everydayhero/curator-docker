@@ -1,6 +1,6 @@
-FROM gliderlabs/alpine:3.2
+FROM gliderlabs/alpine:latest
 
-ENV CURATOR_VERSION 3.2.0
+ENV CURATOR_VERSION 3.5.1
 ENV ELASTICSEARCH_PORT 9200
 
 RUN apk --update add python py-pip bash && pip install elasticsearch-curator==$CURATOR_VERSION
